@@ -1,5 +1,5 @@
 const installReact = async (i, id, getPackages, getDeps) => {
-  const devDeps = ['@babel/preset-react', '@babel/preset-env'];
+  const devDeps = ['@babel/preset-react'];
   const deps = ['react'];
   const { dependencies } = await getDeps();
   if(dependencies.find(elm => elm === 'typescript')) {
@@ -11,10 +11,6 @@ const installReact = async (i, id, getPackages, getDeps) => {
 
 const pkg = {
   config: {
-    entry: './src/index.ts',
-    output: {
-      filename: 'index.js'
-    },
     module: {
       rules: [
         {
@@ -23,7 +19,6 @@ const pkg = {
             loader: 'babel-loader',
             options: {
               presets: [
-                '@babel/preset-env', 
                 '@babel/preset-react'
               ],
             }
