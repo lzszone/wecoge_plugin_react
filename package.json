@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/lzszone/wecoge_plugin_react#readme",
   "peerDependencies": {
-    "@wecoge/wecoge": "^0.0.2"
+    "@wecoge/wecoge": "^0.0.5"
   }
 }

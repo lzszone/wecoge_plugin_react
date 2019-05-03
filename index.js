@@ -30,4 +30,4 @@ const pkg = {
   executor: installReact
 }
 
-export default pkg;
+module.exports = pkg;
